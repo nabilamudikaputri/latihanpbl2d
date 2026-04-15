@@ -37,7 +37,7 @@ class MovieController extends Controller
         return view('input', compact('categories'));
     }
 
-    public function store(Request $request)
+    public function store (Request $request)
     {
         // Validasi data
         $validator = Validator::make($request->all(), [
